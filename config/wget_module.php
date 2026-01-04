@@ -16,7 +16,7 @@ define('WGET_DIR_MODE', 0775);
 define('WGET_FILE_MODE', 0664);
 
 define('WGET_PAUSE_MS', 120);
-define('WGET_MAX_BG', 25);
+define('WGET_MAX_BG', 10);
 
 // timeout / rete
 define('WGET_TIMEOUT_SEC', 60);

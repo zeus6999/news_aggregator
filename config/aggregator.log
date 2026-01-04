@@ -1,0 +1,164 @@
+[2025-12-10 19:41:51] Analizzo homepage: 
+[2025-12-10 19:48:32] Analizzo homepage: 
+[2025-12-10 20:08:05] Analizzo homepage: https://ir.autohome.com.cn/
+[2025-12-10 20:08:06] Candidato feed per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:08:07] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:35:20] Analizzo homepage: https://ir.autohome.com.cn/
+[2025-12-10 20:35:21] Provo pagina IR: https://ir.autohome.com.cn/stock-information/stock-quote
+[2025-12-10 20:35:22] Provo pagina IR: https://ir.autohome.com.cn/shareholder-services/investor-faqs
+[2025-12-10 20:35:23] Nessun feed trovato per: https://ir.autohome.com.cn/ nemmeno via IR.
+[2025-12-10 20:35:47] Analizzo homepage: https://www.autolus.com/
+[2025-12-10 20:35:48] Provo pagina IR: https://www.autolus.com/investor-relations-media
+[2025-12-10 20:35:49] Provo pagina IR: https://www.autolus.com/investor-relations-media/news-media
+[2025-12-10 20:35:49] Provo pagina IR: https://www.autolus.com/investor-relations-media/events
+[2025-12-10 20:35:50] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/events
+[2025-12-10 20:35:50] Provo pagina IR: https://www.autolus.com/investor-relations-media/sec-filings
+[2025-12-10 20:35:50] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/sec-filings
+[2025-12-10 20:35:50] Provo pagina IR: https://www.autolus.com/investor-relations-media/quarterly-earnings
+[2025-12-10 20:35:51] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/quarterly-earnings
+[2025-12-10 20:35:51] Provo pagina IR: https://www.autolus.com/investor-relations-media/stock-quote-chart
+[2025-12-10 20:35:52] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/stock-quote-chart
+[2025-12-10 20:35:52] Provo pagina IR: https://www.autolus.com/investor-relations-media/historical-price-lookup
+[2025-12-10 20:35:52] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/historical-price-lookup
+[2025-12-10 20:35:52] Provo pagina IR: https://www.autolus.com/investor-relations-media/analyst-coverage
+[2025-12-10 20:35:53] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/analyst-coverage
+[2025-12-10 20:35:53] Provo pagina IR: https://www.autolus.com/investor-relations-media/corporate-governance
+[2025-12-10 20:35:53] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/corporate-governance
+[2025-12-10 20:35:53] Provo pagina IR: https://www.autolus.com/investor-relations-media/corporate-presentations
+[2025-12-10 20:35:54] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/corporate-presentations
+[2025-12-10 20:35:54] Provo pagina IR: https://www.autolus.com/investor-relations-media/agm
+[2025-12-10 20:35:55] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/agm
+[2025-12-10 20:35:55] Provo pagina IR: https://www.autolus.com/investor-relations-media/investor-faqs
+[2025-12-10 20:35:55] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/investor-faqs
+[2025-12-10 20:35:55] Provo pagina IR: https://www.autolus.com/investor-relations-media/investor-contacts
+[2025-12-10 20:35:56] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/investor-contacts
+[2025-12-10 20:35:56] Provo pagina IR: https://www.autolus.com/investor-relations-media/email-alerts
+[2025-12-10 20:35:57] Errore HTTP pagina IR: https://www.autolus.com/investor-relations-media/email-alerts
+[2025-12-10 20:35:57] Nessun feed trovato per: https://www.autolus.com/ nemmeno via IR.
+[2025-12-10 20:36:12] Analizzo homepage: https://www.baidu.com/
+[2025-12-10 20:36:15] Nessun feed trovato per: https://www.baidu.com/ nemmeno via IR.
+[2025-12-10 20:36:19] Analizzo homepage: https://www.bbva.com.ar/
+[2025-12-10 20:36:20] Nessun feed trovato per: https://www.bbva.com.ar/ nemmeno via IR.
+[2025-12-10 20:50:48] Analizzo homepage: https://ir.autohome.com.cn/
+[2025-12-10 20:50:49] Processo candidato feed (depth 0): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:50:50] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:50] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:50:50] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:50] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:50:51] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:51] Profondità massima raggiunta su https://ir.autohome.com.cn/rss-feeds, stop.
+[2025-12-10 20:50:51] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:50:52] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:52] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hans/rss-feeds, stop.
+[2025-12-10 20:50:52] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:50:53] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:53] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hant/rss-feeds, stop.
+[2025-12-10 20:50:53] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:50:54] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:50:54] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:50:54] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:50:54] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:50:55] Analizzo homepage: https://ir.autohome.com.cn/
+[2025-12-10 20:50:55] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:50:55] Processo candidato feed (depth 1): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:50:55] Processo candidato feed (depth 0): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:50:56] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:56] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:50:56] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:56] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:50:56] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:56] Profondità massima raggiunta su https://ir.autohome.com.cn/rss-feeds, stop.
+[2025-12-10 20:50:56] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:50:57] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:57] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:50:57] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:57] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hans/rss-feeds, stop.
+[2025-12-10 20:50:57] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:50:57] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:57] Profondità massima raggiunta su https://ir.autohome.com.cn/rss-feeds, stop.
+[2025-12-10 20:50:57] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:50:58] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:58] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hant/rss-feeds, stop.
+[2025-12-10 20:50:58] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:50:58] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:58] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hans/rss-feeds, stop.
+[2025-12-10 20:50:58] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:50:58] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:50:58] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:50:58] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:50:58] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hant/rss-feeds, stop.
+[2025-12-10 20:50:58] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:50:59] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:50:59] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:50:59] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:50:59] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:50:59] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:50:59] Processo candidato feed (depth 1): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:51:00] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:00] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:00] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:00] Processo candidato feed (depth 1): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:51:00] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:00] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:51:01] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:01] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:01] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:51:01] Profondità massima raggiunta su https://ir.autohome.com.cn/rss-feeds, stop.
+[2025-12-10 20:51:01] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:51:01] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:01] Profondità massima raggiunta su https://ir.autohome.com.cn/rss-feeds, stop.
+[2025-12-10 20:51:01] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:51:02] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:02] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hans/rss-feeds, stop.
+[2025-12-10 20:51:02] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:51:02] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:02] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hans/rss-feeds, stop.
+[2025-12-10 20:51:02] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:51:02] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:02] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hant/rss-feeds, stop.
+[2025-12-10 20:51:02] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:03] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:03] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hant/rss-feeds, stop.
+[2025-12-10 20:51:03] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:03] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:03] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:03] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:03] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:03] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:03] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:04] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:04] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:04] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:04] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:05] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:05] Processo candidato feed (depth 1): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:51:05] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:05] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:05] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:05] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:05] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:05] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss-feeds
+[2025-12-10 20:51:06] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:06] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:06] Profondità massima raggiunta su https://ir.autohome.com.cn/rss-feeds, stop.
+[2025-12-10 20:51:06] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hans/rss-feeds
+[2025-12-10 20:51:06] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hans/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:06] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hans/rss-feeds, stop.
+[2025-12-10 20:51:06] Processo candidato feed (depth 2): https://ir.autohome.com.cn/zh-hant/rss-feeds
+[2025-12-10 20:51:07] Candidato NON feed (HTML?) per https://ir.autohome.com.cn/zh-hant/rss-feeds, inizio deep-scan.
+[2025-12-10 20:51:07] Profondità massima raggiunta su https://ir.autohome.com.cn/zh-hant/rss-feeds, stop.
+[2025-12-10 20:51:07] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:07] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:07] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:08] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:08] Processo candidato feed (depth 2): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:09] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:09] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:09] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/news-releases.xml
+[2025-12-10 20:51:09] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:10] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/events.xml
+[2025-12-10 20:51:10] Processo candidato feed (depth 1): https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:10] Feed VALIDO & INTERESSANTE per https://ir.autohome.com.cn/: https://ir.autohome.com.cn/rss/sec-filings.xml
+[2025-12-10 20:51:54] Analizzo homepage: https://www.bbva.com/es/
+[2025-12-10 20:51:55] Processo candidato feed (depth 0): https://www.bbva.com/es/rss/notas-de-prensa
+[2025-12-10 20:51:56] Feed valido ma non interessante, ignorato: https://www.bbva.com/es/rss/notas-de-prensa

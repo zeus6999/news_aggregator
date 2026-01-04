@@ -18,10 +18,9 @@ define('SKIP_IF_EXISTS', true);
 define('RUN_TAG', 'IDXBG_' . getmypid() . '_' . date('Ymd_His'));
 
 $sel = $pdo->prepare("
-    SELECT id, website
-    FROM `1_sites_titoli_da_degiro`                    
-
-    WHERE top='0'
+    SELECT *
+FROM `1_sites_titoli_da_degiro`
+WHERE `pagina_ir` IS NOT NULL AND `top` = '0'
     LIMIT " . (int)BATCH_SIZE
 );
 

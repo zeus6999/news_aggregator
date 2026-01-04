@@ -1,0 +1,27 @@
+@"
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / cache
+*.log
+*.cache
+tmp/
+temp/
+cache/
+
+# PHP deps
+/vendor/
+
+# Env / secrets
+.env
+.env.*
+
+# Node (se mai)
+node_modules/
+
+# XAMPP / local only
+.htaccess.local
+"@ | Set-Content -Encoding UTF8 .gitignore

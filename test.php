@@ -1,0 +1,1 @@
+Ho bisogno un questo SQLper : SELECT *FROM `1_sites_titoli_da_degiro` WHERE `pagina_ir` IS NOT NULL deve copiare da colonna pagina_ir a colonna website dove pagina_ir non deve essere NUll

@@ -15,6 +15,43 @@ function isSameOrSubdomain(string $host, string $baseHost): bool
     return substr($host, -strlen('.' . $baseHost)) === '.' . $baseHost;
 }
 
+function ensureHttpScheme(string $url): string
+{
+    $url = trim($url);
+    if ($url === '') {
+        return $url;
+    }
+    if (!preg_match('~^[a-zA-Z][a-zA-Z0-9+.-]*://~', $url)) {
+        return 'https://' . $url;
+    }
+    return $url;
+}
+
+function isSkippableHref(string $href): bool
+{
+    $href = trim($href);
+    if ($href === '' || $href[0] === '#') {
+        return true;
+    }
+    if (preg_match('~^(mailto:|tel:|javascript:|data:|blob:)~i', $href)) {
+        return true;
+    }
+    return false;
+}
+
+function getBaseHref(DOMDocument $dom, string $fallback): string
+{
+    $xpath = new DOMXPath($dom);
+    $baseNodes = $xpath->query('//base[@href]');
+    if ($baseNodes !== false && $baseNodes->length > 0) {
+        $baseHref = trim($baseNodes->item(0)->getAttribute('href'));
+        if ($baseHref !== '') {
+            return $baseHref;
+        }
+    }
+    return $fallback;
+}
+
 function loadPublicSuffixList(string $path): array
 {
     static $cache = null;
@@ -29,11 +66,15 @@ function loadPublicSuffixList(string $path): array
     ];
 
     if (!is_file($path)) {
+        logMsg("PSL non trovata: {$path}");
+        echo "PSL non trovata: {$path}" . PHP_EOL;
         return $cache;
     }
 
     $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     if ($lines === false) {
+        logMsg("PSL illeggibile o vuota: {$path}");
+        echo "PSL illeggibile o vuota: {$path}" . PHP_EOL;
         return $cache;
     }
 
@@ -54,6 +95,11 @@ function loadPublicSuffixList(string $path): array
         }
 
         $cache['rules'][$line] = true;
+    }
+
+    if (empty($cache['rules']) && empty($cache['wildcards']) && empty($cache['exceptions'])) {
+        logMsg("PSL senza regole valide: {$path}");
+        echo "PSL senza regole valide: {$path}" . PHP_EOL;
     }
 
     return $cache;
@@ -162,7 +208,7 @@ $psl = loadPublicSuffixList(__DIR__ . '/../config/public_suffix_list.dat');
 
 foreach ($sites as $site) {
     $siteId = (int) $site['id'];
-    $baseUrl = trim((string) $site['website']);
+    $baseUrl = ensureHttpScheme((string) $site['website']);
 
     if ($baseUrl === '') {
         continue;
@@ -197,6 +243,8 @@ foreach ($sites as $site) {
     }
     libxml_clear_errors();
 
+    $resolveBase = getBaseHref($dom, $baseUrl);
+
     $xpath = new DOMXPath($dom);
     $links = $xpath->query('//a[@href]');
     if ($links === false) {
@@ -206,11 +254,11 @@ foreach ($sites as $site) {
     $inserted = 0;
     foreach ($links as $a) {
         $href = trim($a->getAttribute('href'));
-        if ($href === '') {
+        if (isSkippableHref($href)) {
             continue;
         }
 
-        $abs = absolutizeUrl($baseUrl, $href);
+        $abs = absolutizeUrl($resolveBase, $href);
         $linkHost = parse_url($abs, PHP_URL_HOST);
         if (!$linkHost) {
             continue;

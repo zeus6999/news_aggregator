@@ -15,6 +15,121 @@ function isSameOrSubdomain(string $host, string $baseHost): bool
     return substr($host, -strlen('.' . $baseHost)) === '.' . $baseHost;
 }
 
+function loadPublicSuffixList(string $path): array
+{
+    static $cache = null;
+    if ($cache !== null) {
+        return $cache;
+    }
+
+    $cache = [
+        'rules'      => [],
+        'wildcards'  => [],
+        'exceptions' => [],
+    ];
+
+    if (!is_file($path)) {
+        return $cache;
+    }
+
+    $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    if ($lines === false) {
+        return $cache;
+    }
+
+    foreach ($lines as $line) {
+        $line = trim($line);
+        if ($line === '' || strpos($line, '//') === 0) {
+            continue;
+        }
+
+        if ($line[0] === '!') {
+            $cache['exceptions'][substr($line, 1)] = true;
+            continue;
+        }
+
+        if (strpos($line, '*.') === 0) {
+            $cache['wildcards'][substr($line, 2)] = true;
+            continue;
+        }
+
+        $cache['rules'][$line] = true;
+    }
+
+    return $cache;
+}
+
+function getPublicSuffixLength(string $host, array $psl): int
+{
+    $labels = explode('.', $host);
+    $n = count($labels);
+    if ($n <= 1) {
+        return 1;
+    }
+
+    $matchLen = 0;
+    $wildcardLen = 0;
+    $exceptionLen = 0;
+
+    for ($i = 0; $i < $n; $i++) {
+        $suffix = implode('.', array_slice($labels, $i));
+        $len = $n - $i;
+
+        if (isset($psl['exceptions'][$suffix])) {
+            if ($len > $exceptionLen) {
+                $exceptionLen = $len;
+            }
+        }
+
+        if (isset($psl['rules'][$suffix])) {
+            if ($len > $matchLen) {
+                $matchLen = $len;
+            }
+        }
+
+        if ($i > 0 && isset($psl['wildcards'][$suffix])) {
+            $wildcardCandidate = $len + 1;
+            if ($wildcardCandidate > $wildcardLen) {
+                $wildcardLen = $wildcardCandidate;
+            }
+        }
+    }
+
+    if ($exceptionLen > 0) {
+        return max(1, $exceptionLen - 1);
+    }
+
+    $maxMatch = max($matchLen, $wildcardLen);
+    return $maxMatch > 0 ? $maxMatch : 1;
+}
+
+function getRegistrableDomain(string $host, array $psl): string
+{
+    $host = strtolower(trim($host, '.'));
+    if ($host === '') {
+        return '';
+    }
+
+    if (filter_var($host, FILTER_VALIDATE_IP)) {
+        return $host;
+    }
+
+    $labels = explode('.', $host);
+    if (count($labels) <= 1) {
+        return $host;
+    }
+
+    $publicLen = getPublicSuffixLength($host, $psl);
+    $labelsCount = count($labels);
+
+    if ($publicLen >= $labelsCount) {
+        return $host;
+    }
+
+    $start = $labelsCount - ($publicLen + 1);
+    return implode('.', array_slice($labels, $start));
+}
+
 
 $downloadDir = '/home/cristian/manda.it/public/news_aggregator/download_index_page';
 
@@ -43,6 +158,8 @@ $insertLink = $pdo->prepare("
         (:site_id, :url, :anchor_text, :host, :source_file)
 ");
 
+$psl = loadPublicSuffixList(__DIR__ . '/../config/public_suffix_list.dat');
+
 foreach ($sites as $site) {
     $siteId = (int) $site['id'];
     $baseUrl = trim((string) $site['website']);
@@ -57,6 +174,7 @@ foreach ($sites as $site) {
         continue;
     }
     $baseHostNorm = normalizeHost($baseHost);
+    $baseDomain = getRegistrableDomain($baseHostNorm, $psl) ?: $baseHostNorm;
 
     $filePath = $downloadDir . DIRECTORY_SEPARATOR . $siteId . '.html';
     if (!is_file($filePath)) {
@@ -99,7 +217,7 @@ foreach ($sites as $site) {
         }
 
         $linkHostNorm = normalizeHost($linkHost);
-        if (!isSameOrSubdomain($linkHostNorm, $baseHostNorm)) {
+        if (!isSameOrSubdomain($linkHostNorm, $baseDomain)) {
             continue;
         }
 
